@@ -1,0 +1,8 @@
+.page-name-container {
+  height: 30px;
+  width: 100%;
+  background: #000;
+  color: #fff;
+  padding: 30px;
+  border-top: 1px solid #fff;
+}
