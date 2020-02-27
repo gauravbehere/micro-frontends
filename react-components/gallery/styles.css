@@ -1,0 +1,18 @@
+.gallery-container {
+  background: #000;
+  height: auto;
+  display: inline-block;
+  width: 100%;
+  padding: 30px;
+  color: #fff;
+}
+
+.image {
+  width: 300px;
+  height: 200px;
+  float: left;
+  background-position: center;
+  background-size: contain;
+  margin: 5px;
+  border: 1px solid #fff;
+}
