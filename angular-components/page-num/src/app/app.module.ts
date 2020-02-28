@@ -1,21 +1,22 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, Injector } from '@angular/core';
 import {createCustomElement} from '@angular/elements';
-import { AppComponent } from './app.component';
+import { PageNumComponent } from './pageNum.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    PageNumComponent
   ],
   imports: [
     BrowserModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  entryComponents: [PageNumComponent]
 })
 export class AppModule { 
   constructor(injector: Injector) {
-    const el = createCustomElement(AppComponent, {injector});
+    const el = createCustomElement(PageNumComponent, {injector});
     customElements.define('page-number', el);
   }
+  ngDoBootstrap() {}
 }
